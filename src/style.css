@@ -46,21 +46,93 @@
 
 @theme {
   --color-azul-claro: #37bcf9;
-  --color-azul-oscuro: #0370b9
+  --color-azul-oscuro: #0370b9;
+  --animate-spin-low: spin 2s infinite linear;
+
+  --animate-lord: lord 500ms linear;
+
+   --animate-lord-r: lord-r 300ms linear;
+
+   --animate-back-banner: back-banner 3s linear ;
+
+  @keyframes lord {
+    0% {
+      transform: translateY(0%)
+    }
+
+    50% {
+      transform: translateY(200%)
+    }
+
+    100% {
+      transform: translateY(0%)
+    }
+  }
+
+  @keyframes lord-r{
+
+    0% {
+      transform: translateX(200%)
+    }
+
+
+    100% {
+      transform: translateX(0%)
+    }
+
+  }
+
+  @keyframes back-banner {
+    0% {
+background-position: 0px 0px
+
+    }
+    100% {
+
+background-position: -300px -200px
+    }
+  }
+
+  --screen-xs: {
+    max-width: 768px;
+  }
+
+
 }
 
 
-.menu-item{
-@apply   mx-5
-          tracking-wider
-          flex-none
+
+.menu-item {
+  @apply 
+  mx-5 
+  tracking-wider 
+  flex-none
+  max-[768px]:flex-1
+  max-[768px]:mx-0
 }
 
-.menu-item-a{
-@apply  block
-          transition
-          duration-200
-          hover:text-azul-claro
-          transform
-          hover:scale-125
+.menu-item-a {
+  @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125
+}
+
+.text-banner{
+  text-shadow: 2px 2px 1px black;
+
+}
+
+.bg-position-banner{
+  background-position: -300px -200px
+}
+
+.card {
+  @apply 
+  flex-1
+ h-80
+ border-2
+ border-gray-200
+ shadow-md
+ bg-white
+ overflow-hidden
+ m-5
+ px-5 
 }

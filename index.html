@@ -11,16 +11,29 @@
 
 <body class=" bg-[url(/img/pattern.png)] bg-scroll">
 
+
+  <!-- INICIO CABEZERA -->
+
   <header id="header" class="
   h-20
 bg-black   
 font-[BebasNeue]
 text-white
+max-[768px]:h-36
 ">
 
-    <div class="container w-10/12 mx-auto flex  ">
-      <div id="logo" class="flex-1 mt-4">
+    <div class="container 
+    w-10/12 
+    mx-auto 
+    flex
+    max-[768px]:flex-col
+      ">
+      <div id="logo" class="flex-1 
+      mt-4
+      max-[768px]:mx-auto
+      ">
         <div class="
+        group
         w-64
         py-0.5
         text-center
@@ -42,6 +55,9 @@ text-white
           text-3xl
           mt-1
           ml-11
+          animate-spin-low
+          
+          group-hover:animate-lord
           ">
             S
           </span>
@@ -53,6 +69,8 @@ text-white
             mr-16
             transition
             duration-100
+            group-hover:animate-lord-r
+            
           ">Tailwind</h3>
         </div>
       </div>
@@ -62,7 +80,7 @@ text-white
         flex
         h-20
         items-center
-        justify-end
+        md:justify-end
         text-2xl
         text-center
         ">
@@ -74,6 +92,125 @@ text-white
       </nav>
     </div>
   </header>
+
+
+
+  <!-- FIN CABEZERA -->
+
+  <!-- INICIO SECCION DE INFORMACION -->
+  <section class="container w-11/12 mx-auto">
+
+    <!-- INICIO BANNER -->
+    <div id="banner" class="
+  w-full
+  h-28
+  mx-auto
+  border-8
+border-white
+overflow-hidden
+shadow
+m-5  
+bg-[url(/img/bakbaner.png)]
+bg-position-banner
+animate-back-banner
+">
+      <h1 class="
+  block
+  text-white
+  text-5xl
+  font-normal
+  tracking-wider
+  m-6
+  mx-auto
+  text-center
+  font-[BebasNeue]
+  text-banner
+  max-[768px]:text-4xl
+  max-[768px]:mt-8
+  ">CURSOS DE TAILWIND</h1>
+    </div>
+
+    <!-- FIN BANNER -->
+
+
+    <!-- INICIO DE TARJETAS -->
+
+    <div id="cards" class="flex flex-nowrap justify-between">
+
+      <div class="card">
+        <p class="card-icon font-['WebSymbolsRegular']">
+          H
+        </p>
+        <h1 class="card-category">
+          Desarrollo web
+        </h1>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium obcaecati veritatis autem nihil!
+          Voluptate odit ipsam magni possimus nesciunt id, atque eum. Possimus dolores eos porro minus, eius ipsam?
+        </p>
+      </div>
+
+
+      <div class="card">
+        <p class="card-icon font-['WebSymbolsRegular']">
+          _
+        </p>
+        <h1 class="card-category">
+          Sistemas operativos
+        </h1>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium obcaecati veritatis autem nihil!
+          Voluptate odit ipsam magni possimus nesciunt id, atque eum. Possimus dolores eos porro minus, eius ipsam?
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="card-icon font-['WebSymbolsRegular']">
+          S
+        </p>
+        <h1 class="card-category">
+          Hardware
+        </h1>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium obcaecati veritatis autem nihil!
+          Voluptate odit ipsam magni possimus nesciunt id, atque eum. Possimus dolores eos porro minus, eius ipsam?
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="card-icon font-['WebSymbolsRegular']">
+          u
+        </p>
+        <h1 class="card-category">
+          Redes e internet
+        </h1>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium obcaecati veritatis autem nihil!
+          Voluptate odit ipsam magni possimus nesciunt id, atque eum. Possimus dolores eos porro minus, eius ipsam?
+        </p>
+      </div>
+
+      <div class="card">
+        <p class="card-icon font-['WebSymbolsRegular']">
+          a
+        </p>
+        <h1 class="card-category">
+          Base de datos
+        </h1>
+        <p class="card-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A laudantium obcaecati veritatis autem nihil!
+          Voluptate odit ipsam magni possimus nesciunt id, atque eum. Possimus dolores eos porro minus, eius ipsam?
+        </p>
+      </div>
+    </div>
+    <!-- FIN DE TARJETAS -->
+
+  </section>
+
+
+
+  <!-- FIN SECCION DE INFORMACION -->
+
 </body>
 
 </html>
