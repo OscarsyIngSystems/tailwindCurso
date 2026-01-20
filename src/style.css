@@ -54,6 +54,8 @@
    --animate-lord-r: lord-r 300ms linear;
 
    --animate-back-banner: back-banner 3s linear ;
+   --animate-lord-top: lord-top 350ms linear ;
+   --animate-lord-l: lord-l 350ms linear ;
 
   @keyframes lord {
     0% {
@@ -93,6 +95,32 @@ background-position: -300px -200px
     }
   }
 
+
+    @keyframes lord-top {
+    0% {
+      transform: translateY(-200%)
+    }
+
+
+    100% {
+      transform: translateY(0%)
+    }
+  }
+
+  @keyframes lord-l{
+
+    0% {
+      transform: translateX(-200%)
+    }
+
+
+    100% {
+      transform: translateX(0%)
+    }
+
+  }
+
+
   --screen-xs: {
     max-width: 768px;
   }
@@ -125,7 +153,9 @@ background-position: -300px -200px
 }
 
 .card {
+  
   @apply 
+  
   flex-1
  h-80
  border-2
@@ -135,4 +165,67 @@ background-position: -300px -200px
  overflow-hidden
  m-5
  px-5 
+ mt-6
+ cursor-pointer
+ duration-300
+ hover:bg-black
+
+ max-[1020px]:h-50
+ max-[1020px]:mx-1
+ 
+
+}
+
+.card-icon{
+  @apply
+  block
+  w-full
+  h-25
+  text-center
+  mt-12 
+  mx-auto
+  transition
+  duration-300
+  text-5xl
+  group-hover:text-azul-claro
+  group-hover:text-6xl
+ group-hover:animate-lord-top
+
+ max-[1020px]:mt-6
+
+}
+
+.card-category{
+  @apply
+  w-full
+  h-12
+  
+  font-bold
+  text-center
+  text-azul-oscuro
+  transition
+  duration-300
+  group-hover:text-white
+ group-hover:animate-lord-top
+
+ 
+
+
+}
+
+.card-description{
+    font-family: "TrebuchetMS";
+  @apply
+  text-center
+  text-azul-oscuro
+  text-base
+  transition
+  duration-300
+  overflow-hidden
+  group-hover:text-white
+ group-hover:animate-lord-l
+
+ max-[1020px]:hidden
+
+
 }
