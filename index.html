@@ -231,35 +231,78 @@ animate-back-banner
       flex-none
       w-72
       min-h-full
-      mt-5 
+   
     ">
-      <h3>Buscar</h3>
-      <div id="search">
+      <h3 class="aside-header ">Buscar</h3>
+      <div id="search" class="
+      w-10/12
+      h-7
+      m-2.5
+      mx-auto
+      bg-white
+      border-gray-200
+      rounded
+      shadow-inner
+      ">
         <form action="">
-          <input type="text" />
-          <input type="button" value="buscar" />
+          <input type="text" class="
+          w-10/12
+          h-6
+          border-none
+          pl-1.5
+          rounded-md
+          bg-transparent
+          text-gray-400
+          transition
+          duration-300
+          outline-none
+          focus:outline-none
+          " />
+          <input type="button" value="L" class="
+          font-[WebSymbolsRegular]
+          h-6
+          cursor-pointer
+          border-none
+          text-base
+          bg-transparent
+          text-gray-500
+          pl-2
+          " />
         </form>
       </div>
 
-      <h3>Login</h3>
+      <h3 class="aside-header">Login</h3>
 
-      <div id="login">
+      <div id="login" class="aside-box">
         <form action="">
-          <label for="email">Usuario</label>
-          <input type="email" id="email" />
-          <label for="password">Contraseña</label>
-          <input type="password" id="password" />
+          <label for="email" class="login-icon">U</label>
+          <input type="email" id="email" class="login-input" />
+          <label for="password" class="
+          text-xl 
+          ml-7 
+          mt-6
+          text-center
+          absolute
+          font-[WebSymbolsRegular]
+          h-8
+    
+          ">w</label>
+          <input type="password" id="password" class="login-input" />
 
-          <input type="submit" value="entrar">
-          <input type="reset" value="limpiar">
+          <input type="submit" value="Entrar" class="btn-login">
+          <input type="reset" value="Limpiar" class="btn-login !ml-1">
 
-          <a href="#">Registrate aqui</a>
-          <a href="#">Has olvidado tu contraseña?</a>
+          <a href="#" class="
+         link-login
+          ">Registrate aqui</a>
+          <a href="#" class="
+         link-login
+          ">Has olvidado tu contraseña?</a>
         </form>
       </div>
 
-      <h3>Redes sociales</h3>
-      <div id="social-media">
+      <h3 class="aside-header ">Redes sociales</h3>
+      <div id="social-media" class="aside-box">
         <div class="twitter">
           <a href="">Twitter</a>
           <p>Twitter</p>
@@ -274,8 +317,8 @@ animate-back-banner
         </div>
       </div>
 
-      <h3>Patrocinadores</h3>
-      <div id="sponsors"></div>
+      <h3 class="aside-header">Patrocinadores</h3>
+      <div id="sponsors" class="aside-box"></div>
 
 
     </aside>
