@@ -7,37 +7,33 @@
   }
 } */
 
-
 /* Fuentes */
-
-
 
 @font-face {
   font-family: "TrebuchetMS";
-  src: url('/fonts/TrebuchetMS.ttf');
+  src: url("/fonts/TrebuchetMS.ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "BebasNeue";
-  src: url('/fonts/BebasNeue.otf');
+  src: url("/fonts/BebasNeue.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "WebSymbolsRegular";
-  src: url('/fonts/websymbols-regular-webfont.eot');
-  src: url('/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/websymbols-regular-webfont.woff') format('woff'),
-    url('/fonts/websymbols-regular-webfont.ttf') format('truetype'),
-    url('/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+  src: url("/fonts/websymbols-regular-webfont.eot");
+  src:
+    url("/fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/websymbols-regular-webfont.woff") format("woff"),
+    url("/fonts/websymbols-regular-webfont.ttf") format("truetype"),
+    url("/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
-
 
 /* se puede usar la clase o la sintaxis de tailwind font-[WebSymbolsRegular] */
 .symbol {
@@ -51,181 +47,230 @@
 
   --animate-lord: lord 500ms linear;
 
-   --animate-lord-r: lord-r 300ms linear;
+  --animate-lord-r: lord-r 300ms linear;
 
-   --animate-back-banner: back-banner 3s linear ;
-   --animate-lord-top: lord-top 350ms linear ;
-   --animate-lord-l: lord-l 350ms linear ;
+  --animate-back-banner: back-banner 3s linear;
+  --animate-lord-top: lord-top 350ms linear;
+  --animate-lord-l: lord-l 350ms linear;
+
+  --shadow-header3D:
+    0px 1px 0px #393d3f, 0px 2px 0px #393d3f, 2px 3px 0px #393d3f,
+    3px 4px 0px #393d3f;
 
   @keyframes lord {
     0% {
-      transform: translateY(0%)
+      transform: translateY(0%);
     }
 
     50% {
-      transform: translateY(200%)
+      transform: translateY(200%);
     }
 
     100% {
-      transform: translateY(0%)
+      transform: translateY(0%);
     }
   }
 
-  @keyframes lord-r{
-
+  @keyframes lord-r {
     0% {
-      transform: translateX(200%)
+      transform: translateX(200%);
     }
-
 
     100% {
-      transform: translateX(0%)
+      transform: translateX(0%);
     }
-
   }
 
   @keyframes back-banner {
     0% {
-background-position: 0px 0px
-
+      background-position: 0px 0px;
     }
-    100% {
 
-background-position: -300px -200px
+    100% {
+      background-position: -300px -200px;
     }
   }
 
-
-    @keyframes lord-top {
+  @keyframes lord-top {
     0% {
-      transform: translateY(-200%)
+      transform: translateY(-200%);
     }
 
-
     100% {
-      transform: translateY(0%)
+      transform: translateY(0%);
     }
   }
 
-  @keyframes lord-l{
-
+  @keyframes lord-l {
     0% {
-      transform: translateX(-200%)
+      transform: translateX(-200%);
     }
-
 
     100% {
-      transform: translateX(0%)
+      transform: translateX(0%);
     }
-
   }
-
 
   --screen-xs: {
     max-width: 768px;
   }
 
-
+  ;
 }
-
-
 
 .menu-item {
   @apply 
   mx-5 
   tracking-wider 
-  flex-none
-  max-[768px]:flex-1
-  max-[768px]:mx-0
+  flex-none 
+  max-[768px]:flex-1 
+  max-[768px]:mx-0;
 }
 
 .menu-item-a {
-  @apply block transition duration-200 hover:text-azul-claro transform hover:scale-125
+  @apply 
+  block 
+  transition 
+  duration-200 
+  hover:text-azul-claro 
+  transform 
+  hover:scale-125;
 }
 
-.text-banner{
+.text-banner {
   text-shadow: 2px 2px 1px black;
-
 }
 
-.bg-position-banner{
-  background-position: -300px -200px
+.bg-position-banner {
+  background-position: -300px -200px;
 }
 
 .card {
-  
   @apply 
-  
-  flex-1
- h-80
- border-2
- border-gray-200
- shadow-md
- bg-white
- overflow-hidden
- m-5
- px-5 
- mt-6
- cursor-pointer
- duration-300
- hover:bg-black
-
- max-[1020px]:h-50
- max-[1020px]:mx-1
- 
-
+  flex-1 
+  h-80 
+  border-2 
+  border-gray-200 
+  shadow-md 
+  bg-white 
+  overflow-hidden 
+  m-5 
+  px-5 
+  mt-6 
+  cursor-pointer 
+  duration-300 
+  hover:bg-black 
+  max-[1020px]:h-50 
+  max-[1020px]:mx-1;
 }
 
-.card-icon{
-  @apply
-  block
-  w-full
-  h-25
-  text-center
+.card-icon {
+  @apply 
+  block 
+  w-full 
+  h-25 
+  text-center 
   mt-12 
-  mx-auto
-  transition
-  duration-300
-  text-5xl
-  group-hover:text-azul-claro
-  group-hover:text-6xl
- group-hover:animate-lord-top
+  mx-auto 
+  transition 
+  duration-300 
+  text-5xl 
+  group-hover:text-azul-claro 
+  group-hover:text-6xl 
+  group-hover:animate-lord-top 
+  max-[1020px]:mt-6;
+}
 
- max-[1020px]:mt-6
+.card-category {
+  @apply 
+  w-full 
+  h-12 
+  font-bold 
+  text-center 
+  text-azul-oscuro 
+  transition 
+  duration-300 
+  group-hover:text-white 
+  group-hover:animate-lord-top;
+}
+
+.card-description {
+  font-family: "TrebuchetMS";
+  @apply text-center 
+  text-azul-oscuro 
+  text-base 
+  transition 
+  duration-300 
+  overflow-hidden 
+  group-hover:text-white 
+  group-hover:animate-lord-l 
+  max-[1020px]:hidden;
+}
+
+.article-header {
+  font-family: "BebasNeue";
+  background-image: url(/img/pxgray.png);
+  @apply 
+  block 
+  w-full 
+  h-20 text-4xl 
+  text-center 
+  font-medium 
+  tracking-widest 
+  pt-5 
+  shadow-header3D 
+  border;
 
 }
 
-.card-category{
+
+.article-item{
   @apply
-  w-full
-  h-12
-  
-  font-bold
-  text-center
-  text-azul-oscuro
-  transition
-  duration-300
-  group-hover:text-white
- group-hover:animate-lord-top
 
- 
-
-
+   w-full
+   border
+   h-auto
+   m-10
+   border-gray-200
+   p-2.5
+   mx-auto
+   text-black
+   bg-white
+   shadow-md 
 }
 
-.card-description{
-    font-family: "TrebuchetMS";
+.article-data{
   @apply
-  text-center
-  text-azul-oscuro
-  text-base
-  transition
-  duration-300
-  overflow-hidden
-  group-hover:text-white
- group-hover:animate-lord-l
+   float-right
+        bg-gray-800
+        h-10
+        leading-7
+        p-1
+        text-white
+        -m-2.5
+        text-sm
+        rounded-bl-lg 
+}
 
- max-[1020px]:hidden
+.article-head{
+  @apply
+    block
+        text-2xl
+        m-1
+}
 
+.article-title{
+  @apply
+   font-semibold
+          text-azul-oscuro
+          hover:underline
+}
 
+.article-text{
+  @apply
+   block
+        my-3
+        text-base
+        font-sans
+        font-normal
 }
